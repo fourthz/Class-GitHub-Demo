@@ -9,6 +9,8 @@ library(tidyverse)
 
 hsb2 <- read_csv("hsb2.csv")
 
+hsb2$ses <- factor(hsb2$ses, level = 1:3, labels = c("low", "middle", "high"))
+
 ```
 
 
@@ -24,4 +26,16 @@ hsb2 %>%
   summarize(mean(math), median(math), sd(math), min(math), max(math))
 
 ```
+
+Now let's look at a plot.
+
+```{r}
+
+hsb2 %>%
+  ggplot(aes(x = ses, y = math)) +
+  geom_boxplot()
+
+```
+
+
 
