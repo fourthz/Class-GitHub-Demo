@@ -39,5 +39,6 @@ hsb2 %>%
 
 ## Relationship of SES to reading scores
 
+This is an analysis of the relationship of SES to reading for hsb2.
 
 
