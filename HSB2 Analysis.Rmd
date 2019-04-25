@@ -37,5 +37,7 @@ hsb2 %>%
 
 ```
 
+## Relationship of SES to reading scores
+
 
 
